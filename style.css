@@ -38,6 +38,10 @@ header nav .nav-div .left-nav h1{
 /* The rem unit is relative to the font size of the root element (<html>), not the parent element. */
 /* The default font size of the root element (<html>) in most web browsers is typically 16 pixels (px). */
 
+/* The clamp() CSS function clamps a middle value within a range of values between a defined 
+minimum bound and a maximum bound. The function takes three parameters: a minimum value, 
+a preferred value, and a maximum allowed value. */
+
 header nav .nav-div .left-nav h1 span{
     color: var(--primary-color);
 }
@@ -60,6 +64,7 @@ header #about {
 }
 header #about h2{
     margin-bottom: 15px;
+    font-size: 35px;
 }
 header #about h2 span{
     color: var(--primary-color);
@@ -73,7 +78,12 @@ header .my-info p{
     margin: 15px 0;
 }
 header .my-info #name{
-    font-size: clamp(20px , 5vw, 25px);
+    font-size: clamp(20px , 1.8vw, 30px);
+    /* font-size: 1.8vw; */
+}
+header .my-info #designation {
+    font-size: clamp(16px , 1.3vw, 24px);
+    /* font-size: 24px; */
 }
 header #about .icons img{
     width: 3%;
