@@ -30,7 +30,7 @@ header nav .nav-div{
 } 
 
 header nav .nav-div .left-nav h1{
-    font-size: clamp(25px , 3vw, 30px);
+    font-size: clamp(25px , 2vw, 40px);
     font-weight: var(--bold-font);
 }
 
@@ -60,34 +60,48 @@ header nav .nav-div .right-nav a {
 }
 header #about {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 header #about h2{
     margin-bottom: 15px;
-    font-size: 35px;
+    font-size: clamp(28px, 1.8vw, 40px);
 }
 header #about h2 span{
     color: var(--primary-color);
 }
+header #about .pic-div{
+    margin: 0 auto;
+    width : 10%;
+}
 header #about #my-pic {
-    width: 10%;
-    height: 10%;
+    max-width: 100%;
     border-radius: 50%;
 }
-header .my-info p{
-    margin: 15px 0;
+header #about .my-info{
+    margin-top: 20px;
+}
+header #about .my-info .skills-email{
+    margin: 20px auto;
+    text-align: center;
+    /* box-sizing: content-box; */
+}
+header #about .my-info .skills-email p{
+    font-size : clamp(18px, 0.9vw, 20px);
+    margin-bottom: 12px;
 }
 header .my-info #name{
-    font-size: clamp(20px , 1.8vw, 30px);
-    /* font-size: 1.8vw; */
+    font-size: clamp(25px , 1.5vw, 30px);
 }
 header .my-info #designation {
-    font-size: clamp(16px , 1.3vw, 24px);
-    /* font-size: 24px; */
-}
-header #about .icons img{
-    width: 3%;
+    font-size: clamp(20px , 1.1vw, 25px);
 }
 header #skills{
     color: var(--primary-color);
+}
+header #about .icons{
+    margin-top: 20px;
+}
+header #about .icons img{
+    width: 2vw;
+    min-width: 25px;
 }
