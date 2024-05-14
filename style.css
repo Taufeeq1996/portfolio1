@@ -52,7 +52,7 @@ header nav .nav-div .right-nav{
     display: flex;
     justify-content: space-between;
 } 
-header nav .nav-div .menu {
+header nav .nav-div .dropdown {
     display: none;
 }
 
@@ -118,7 +118,7 @@ header #about .icons img{
     header nav .nav-div .right-nav{
         display: none;
     }
-    header nav .nav-div .menu {
+    header nav .nav-div .dropdown {
         display: block;
     }
 }
@@ -127,7 +127,7 @@ header #about .icons img{
     header nav .nav-div .right-nav{
         display: none;
     }
-    header nav .nav-div .menu {
+    header nav .nav-div .dropdown{
         display: block;
     }
     header #about .pic-div{
