@@ -1,16 +1,14 @@
-/* html{
-    font-size: 62.5%;
-} */
 *{
-    margin:0;
-    padding:0;
-    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    font-family: 'monospace', sans-serif;
 }
 
 :root{
     --primary-color : #00abae;
     --secondary-color: black;
-    --light-gray : #6c757d;
+    --gray : #6c757d;
+    --light-gray : #a8a8a8;
     --thin-font : 100;
     --light-font : 300;
     --regular-font : 400;
@@ -35,7 +33,6 @@ header nav .nav-div{
 
 header nav .nav-div .left-nav h1{
     font-size: clamp(25px , 2vw, 40px);
-    /* font-size: 3vw; */
     font-weight: var(--bold-font);
 }
 
@@ -52,16 +49,11 @@ header nav .nav-div .left-nav h1 span{
 }
 
 header nav .nav-div .right-nav{
-    /* width: 15%; */
     text-align: right;
-    /* margin: 1px; */
-    /* display: flex;
-    justify-content: space-between; */
 } 
 header nav .nav-div .dropdown {
     display: none;
 }
-
 header nav .nav-div .right-nav a {
     text-decoration: none;
     margin-right: 10px;
@@ -71,9 +63,11 @@ header nav .nav-div .right-nav a {
 }
 header #about {
     text-align: center;
-    margin-top: 30px;
+    margin: 60px auto;
+    max-width: 600px;
 }
 header #about h2{
+    font-weight: var(--bold-font);
     margin-bottom: 15px;
     font-size: clamp(28px, 1.8vw, 40px);
 }
@@ -82,7 +76,7 @@ header #about h2 span{
 }
 header #about .pic-div{
     margin: 0 auto;
-    width : 10%;
+    width : 18%;
 }
 header #about #my-pic {
     max-width: 100%;
@@ -91,6 +85,9 @@ header #about #my-pic {
 header #about .my-info{
     margin-top: 20px;
 }
+header #about .my-info p{
+    margin-bottom : 0;
+}
 header #about .my-info .skills-email{
     margin: 20px auto;
     text-align: center;
@@ -98,37 +95,38 @@ header #about .my-info .skills-email{
 }
 header #about .my-info .skills-email p{
     font-size : clamp(18px, 0.9vw, 20px);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 header .my-info #name{
     font-size: clamp(25px , 1.5vw, 30px);
 }
 header .my-info #designation {
     font-size: clamp(20px , 1.1vw, 25px);
+    color: var(--light-gray);
 }
 header #skills{
     color: var(--primary-color);
 }
 header #about .icons{
     margin-top: 20px;
+    text-align: center;
+}
+header #about .icons a{
+    text-decoration: none;
+    cursor: pointer;
 }
 header #about .icons img{
     width: 2vw;
-    min-width: 25px;
+    margin-left: 10px;
 }
+
 /* media screen  */ 
 
-/* @media only screen and (min-width: 768px) and (max-width: 1280px){
-    header #about .pic-div{
-        width: 25%;
+@media only screen and (min-width: 651px) and (max-width: 1280px){
+    header #about .icons img{
+        width: 4vw;
     }
-    header nav .nav-div .right-nav{
-        display: none;
-    }
-    header nav .nav-div .dropdown {
-        display: block;
-    }
-} */
+}
 
 @media only screen and (max-width: 650px){
     header nav .nav-div .right-nav{
@@ -143,9 +141,12 @@ header #about .icons img{
     header #about .my-info .skills-email{
         padding: 0 1em;
     }
-    header #about .my-info .skills-email p{
-        word-wrap: break-word;
+    header #about .icons img{
+        width: 8vw;
     }
+    /* header #about .my-info .skills-email p{
+        word-wrap: break-word;
+    } */
 }
 
 /* main  */
@@ -157,6 +158,7 @@ main #projects h2{
     margin: 15px auto;
     text-align: center;
     font-size: clamp(28px, 1.8vw, 40px);
+    font-weight: var(--bold-font);
 }
 
 main #projects span{
@@ -173,62 +175,66 @@ main #projects .project-div{
     /* align-items: flex-start; */
 }
 main #projects .project-div .project-img{
-    /* width:33%; */
     flex-basis: 33%;
 }
 main #projects .project-div .project-img img{
     width: 100%;
-    /* max-width: 100%; */
-    height: 100%;
-    object-fit:cover;
+    /* height: 100%;
+    object-fit:cover; */
 }
 main #projects .project-div .project-info {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 1em;
-    /* flex: 1; */
 }
 main #projects .project-div .project-info .project-name{
     line-height: 1.6;
 }
 main #projects .project-div .project-info .project-name h3{
     font-size: 1.3vw;
+    font-weight: var(--bold-font);
 }
 main #projects .project-div .project-info .project-email {
     margin: 15px 0; 
-    color: var(--light-gray);
-    line-height: 1.5;
+    color: var(--gray);
+}
+main #projects .project-div .project-info .project-email p{
+    margin: 0;
 }
 main #projects .project-div .project-info .project-btn button{
-    width: 20%;
-    padding: 1rem;
+    padding: 0.375rem 0.75rem;
     border: 0;
     color: white;
-    background-color: var(--light-gray);
     border-radius: 5px;
-    font-size: 1vw;
+    cursor: pointer;
+}
+main #projects .project-div .project-info .project-btn .website-btn{
+    background-color: var(--gray);
+}
+main #projects .project-div .project-info .project-btn .github-btn{
+    background-color: var(--secondary-color);
 }
 
 /* main media screen  */
 
 @media only screen and (min-width: 651px) and (max-width: 1280px){
-    main #projects .project-div{
-        /* flex-direction: column; */
+    /* main #projects .project-div{
+        flex-direction: column;
         word-wrap: break-word;
         width: 80%;
-    }
+    } */
     main #projects .project-div .project-img{
         flex-basis: 100%;
     }
-    main #projects .project-div .project-info {
+    /* main #projects .project-div .project-info {
         padding: 1rem;
         margin-top: 0;
-    }
+    } */
     main #projects .project-div .project-info .project-name h3{
         font-size: 20px;
     }
     main #projects .project-div .project-info .project-btn button{
-        width: 49%;
-        font-size: 1rem;
+        width: 30%;
+        /* font-size: 1rem; */
     }
 }
 
@@ -250,7 +256,7 @@ main #projects .project-div .project-info .project-btn button{
         font-size: 20px;
     }
     main #projects .project-div .project-info .project-btn button{
-        width: 49%;
+        width: 35%;
         font-size: 1rem;
     }
 }
