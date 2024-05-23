@@ -92,7 +92,6 @@ header #about .my-info p{
 header #about .my-info .skills-email{
     margin: 20px auto;
     text-align: center;
-    /* box-sizing: content-box; */
 }
 header #about .my-info .skills-email p{
     font-size : clamp(18px, 0.9vw, 20px);
@@ -145,9 +144,6 @@ header #about .icons img{
     header #about .icons img{
         width: 8vw;
     }
-    /* header #about .my-info .skills-email p{
-        word-wrap: break-word;
-    } */
 }
 
 /* main  */
@@ -217,24 +213,14 @@ main #projects .project-div .project-info .project-btn .github-btn{
 /* main media screen  */
 
 @media only screen and (min-width: 651px) and (max-width: 1280px){
-    /* main #projects .project-div{
-        flex-direction: column;
-        word-wrap: break-word;
-        width: 80%;
-    } */
     main #projects .project-div .project-img{
         flex-basis: 100%;
     }
-    /* main #projects .project-div .project-info {
-        padding: 1rem;
-        margin-top: 0;
-    } */
     main #projects .project-div .project-info .project-name h3{
         font-size: 20px;
     }
     main #projects .project-div .project-info .project-btn button{
-        width: 30%;
-        /* font-size: 1rem; */
+        width: 32%;
     }
 }
 
@@ -256,7 +242,7 @@ main #projects .project-div .project-info .project-btn .github-btn{
         font-size: 20px;
     }
     main #projects .project-div .project-info .project-btn button{
-        width: 35%;
+        width: 37%;
         font-size: 1rem;
     }
 }
